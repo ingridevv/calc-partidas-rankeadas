@@ -6,7 +6,7 @@ A classificação do ranking deve incluir os níveis: Ferro, Bronze, Prata, Ouro
 ### Linguagens e Bibliotecas utilizadas: HTML, CSS, TailwindCSS e JavaScript.
 
 Este desafio apresenta uma aplicação prática dos conhecimentos sobre lógica de programação e pensamento computacional obtidos 
-no módulo de "Trabalhando com Funções" do Bootmcamp GFT Start #6 da Digital Innovation One em parceria com a GFT.
+no módulo de "Trabalhando com Funções" do Bootcamp GFT Start #6 da Digital Innovation One em parceria com a GFT.
 
 ## O que aprendi neste desafio?
 
