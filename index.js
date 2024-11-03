@@ -1,3 +1,12 @@
+// readline para solicitar input do usuário
+const readline = require('readline')
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+// Objeto com as classificações do Ranking
 const vitoriasNivel = {
     Ferro: 1,
     Bronze: 10,
@@ -22,11 +31,18 @@ function calcPartidas(vitorias, derrotas) {
         }
     })
     
-        return ranking
+        return `O Herói tem saldo de ${saldoRankeadas} e está no nível ${ranking}`
 }
 
+// Solicita o número de vitórias e derrotas do usuário 
+rl.question('Digite o número de vitórias do herói: ', (vitoriasInput) => {
+    rl.question('Digite o número de derrotas do herói: ', (derrotasInput) => {
+        const vitoriasCount = parseInt(vitoriasInput);
+        const derrotasCount = parseInt(derrotasInput);
 
-console.log(calcPartidas(101, 0))
+        // Exibir o resultado
+        console.log(calcPartidas(vitoriasCount, derrotasCount));
 
-
-
+        rl.close();
+    });
+});
